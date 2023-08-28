@@ -4,6 +4,7 @@ description: Geolocation Linux plugin for Flutter. This plugin provides the
 repository: https://github.com/baseflow/flutter-geolocator/tree/main/geolocator_linux
 issue_tracker: https://github.com/baseflow/flutter-geolocator/issues?q=is%3Aissue+is%3Aopen
 version: 0.1.3
+publish_to: none
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
@@ -21,7 +22,10 @@ dependencies:
   flutter:
     sdk: flutter
   geoclue: ^0.1.1
-  geolocator_platform_interface: ^4.0.0
+  geolocator_platform_interface:
+    git:
+      url: https://github.com/konturio/flutter-geolocator/
+      path: geolocator_platform_interface
   gsettings: ^0.2.5
   package_info_plus: ">=1.4.2 <5.0.0"
 

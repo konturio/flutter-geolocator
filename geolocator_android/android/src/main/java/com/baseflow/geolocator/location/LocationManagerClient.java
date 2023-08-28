@@ -10,7 +10,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Looper;
-
+import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -97,6 +97,8 @@ class LocationManagerClient implements LocationClient, LocationListener {
         criteria.setHorizontalAccuracy(Criteria.ACCURACY_MEDIUM);
         criteria.setPowerRequirement(Criteria.POWER_MEDIUM);
         break;
+      case gpsOnly:
+        return LocationManager.GPS_PROVIDER;
       default:
         criteria.setAccuracy(Criteria.ACCURACY_FINE);
         criteria.setHorizontalAccuracy(Criteria.ACCURACY_HIGH);

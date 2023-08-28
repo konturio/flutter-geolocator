@@ -25,4 +25,9 @@ enum LocationAccuracy {
   /// Location accuracy is reduced for iOS 14+ devices, matches the
   /// [LocationAccuracy.lowest] on iOS 13 and below and all other platforms.
   reduced,
+
+  /// Forcibly selects gps as location provider
+  /// Currently supported only for Android 
+  /// [LocationAccuracy.gpsOnly]
+  gpsOnly,
 }

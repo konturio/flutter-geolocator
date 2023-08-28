@@ -6,5 +6,6 @@ public enum LocationAccuracy {
   medium,
   high,
   best,
-  bestForNavigation
+  bestForNavigation,
+  gpsOnly
 }

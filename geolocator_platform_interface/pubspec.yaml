@@ -4,6 +4,7 @@ repository: https://github.com/baseflow/flutter-geolocator/tree/main/geolocator_
 # NOTE: We strongly prefer non-breaking changes, even at the expense of a
 # less-clean API. See https://flutter.dev/go/platform-interface-breaking-changes
 version: 4.0.7
+publish_to: none
 
 dependencies:
   flutter:
