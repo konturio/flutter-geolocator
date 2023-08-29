@@ -136,6 +136,8 @@ class GeolocatorPlugin extends GeolocatorPlatform {
       case LocationAccuracy.best:
       case LocationAccuracy.bestForNavigation:
         return true;
+      default:
+        return false;
     }
   }
 

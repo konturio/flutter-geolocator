@@ -36,7 +36,6 @@ dependencies:
     git:
       url: https://github.com/konturio/flutter-geolocator/
       path: geolocator_android
-
   geolocator_apple:
     git:
       url: https://github.com/konturio/flutter-geolocator/
