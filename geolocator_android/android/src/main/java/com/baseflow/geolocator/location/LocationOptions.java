@@ -47,6 +47,7 @@ public class LocationOptions {
           break;
         case 7:
           locationAccuracy = LocationAccuracy.gpsOnly;
+          break;
         case 4:
         default:
           break;
